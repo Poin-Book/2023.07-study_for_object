@@ -1,7 +1,7 @@
 ---
 name: study issue template
 about: 스터디용 이슈 탬플릿
-title: Chpater {제목}
+title: Chapter {제목}
 labels: ":monocle_face: to-do"
 assignees: ''
 
