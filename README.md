@@ -23,7 +23,7 @@
 |:---:|:---:|:---:|:---:|
 |[고민정](https://github.com/rhalswjd)|[심세원](https://github.com/ShimFFF)|[최선규](https://github.com/luke0408)|[최연정](https://github.com/yeonjeonchoi)|
 
-<center>
+</center>
 
 ## 스터디 개요
 
@@ -35,6 +35,8 @@
     - Intro: 프로그래밍 패러다임
     - 1장: 객체, 설계
   - 2주차: 07.19(수)
+    - 2장: 객체지향 프로그래밍
+    - 3장: 역할, 책임, 협력
   - 3주차: 07.26(수)
   - 4주차: 08.02(수)
   - 5주차: 08.09(수)
