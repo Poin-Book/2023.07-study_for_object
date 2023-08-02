@@ -11,7 +11,7 @@
 ## 할인 조건 개선 
 >  _변경에 취약한 클래스란?_ <br> 코드를 수정해야 하는 이유를 한 가지 이상 가지는 클래스
 
-Discount condition은 다음의 세 가지의 이유로 변경될 수 있다.
+**Discount condition은 다음의 세 가지의 이유로 변경될 수 있다.**
 1. 새로운 할인 조건 추가
     - isSatisfied 매서드 안의 if else 구문 수정
     - 새로운 할인 조건이 새로운 데이터를 요구한다면 DiscountCondition에 속성을 추가하는 작업도 필요
@@ -37,7 +37,7 @@ Discount condition은 다음의 세 가지의 이유로 변경될 수 있다.
 ## 타입 분리
 >DiscountCondition의 문제는 순번 조건과 기간 조건이라는 두 개의 독립적인 타입이 하나의 클래스 안에 공존하고 있다는 점
  
-클래스 분리를 통해 sequence 속성만 사용하는 메서드는 SequenceCondition으로, dayOfWeek, startTime, endTime을 사용하는 메서드는 PeriodCondition으로 이동 →  개별 클래스의 응집도 향상
+클래스 분리를 통해 sequence 속성만 사용하는 메서드는 SequenceCondition으로, dayOfWeek, startTime, endTime을 사용하는 메서드는 PeriodCondition으로 이동 **→  개별 클래스의 응집도 향상**
 
 ##### BUT 위의 방식이 문제를 야기
 
@@ -51,7 +51,7 @@ Movie class 안에서 SequenceCondition의 목록과 PeriodCondition의 목록�
 1. Movie class가 PeriodCondition과 SequenceCondition 양쪽 모두에게 결합된다.
 2. 수정 후에 새로운 할인 조건을 추가하기가 더 어려워 졌다.
 
-→  DiscountCondition의 입장에서 보면 응집도가 높아졌지만 변경과 캡슐화라는 관점에서 보면 전체적으로 설계의 품질이 나빠졌다.
+**→  DiscountCondition의 입장에서 보면 응집도가 높아졌지만 변경과 캡슐화라는 관점에서 보면 전체적으로 설계의 품질이 나빠졌다.**
 
 ## 다형성 분리
 > POLYMORPHISM (다형성)<br>
@@ -89,7 +89,7 @@ Movie에 대한 어떠한 수정도 필요 없고 오직 DiscountCondition inter
 ## Movie class 개선
 ###### 문제점 ) <br>
 금액 할인 정책 영화와 비율 할인 정책 영화 두 가지 타입을 하나의 클래스 안에 구현하고 있다.<br>
-→  하나 이상의 이유로 변경될 수 있기에 응집도가 낮다.<br>
+**→  하나 이상의 이유로 변경될 수 있기에 응집도가 낮다.** <br>
 <br>
 Movie의 경우에는 클래스들 사이에 구현을 공유할 필요가 있기 때문에 추상클래스를 이용한다.
 ```java
