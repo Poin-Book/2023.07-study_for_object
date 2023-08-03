@@ -22,7 +22,8 @@
     - isSatisfiedByPeriod 메서드 내부 구현 수정
     - 기간 조건을 판단하는 데 필요한 데이터가 변경된다면 DiscountCondition의 dayOfWeek, startTime, endTime 속성 변경
 
-→ DiscountCondition은 하나 이상의 변경 이유를 가지기 때문에 응집도가 낮다.
+→ DiscountCondition은 하나 이상의 변경 이유를 가지기 때문에 응집도가 낮다. <br>
+*응집도가 낮다는 것은 연관성이 없는 기능이나 데이터가 하나의 클래스 안에 뭉쳐져 있다는 것을 의미
 
  **클레스의 응집도 판단하기**
 1. 인스턴스 변수가 초기화 되는 시점을 보자
