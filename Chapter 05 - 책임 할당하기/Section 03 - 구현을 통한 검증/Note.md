@@ -116,7 +116,7 @@ public class AmountDiscountMovie extends Movie{
 }
 ``` 
 *PercentDiscountMovie (비율 할인 정책) 도 위와 같은 방법으로 구현한다.<br>
-*NoneDiscountMovie (할인 정책 적용 X) 는 calculateDiscountAmount에서 0원 반환
+*NoneDiscountMovie (할인 정책 적용 X) 는 calculateDiscountAmount에서 0원 반환<br>
 데이터 중심 설계는 응집도가 낮고 변경에 취약한 코드가 만들어질 가능성이 높다.
 **→ 책임 중심으로 설계하자.**  
 
