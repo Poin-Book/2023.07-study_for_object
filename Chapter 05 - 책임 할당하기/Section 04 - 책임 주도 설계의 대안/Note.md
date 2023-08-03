@@ -23,8 +23,8 @@
 수정 후에는 각 메서드들이 단 하나의 이유에 의해서만 변경됨을 알 수 있다.<br>
 하나의 변경 이유를 가지도록 개선될 때 결과적으로 응집도 높은 클래스가 만들어진다. <br><br>
 * **수정 전** <br>
-<img src="https://github.com/luke0408/study_for_object/assets/112948730/ebb191a8-26b0-4f36-985d-648b93cb6763" style="width:700px; height:700px;"/>
-<img src="https://github.com/luke0408/study_for_object/assets/112948730/b2ff9137-fe95-4b82-80a9-2bed87806b9f" style="width:700px; height:1000px;"/><br><br>
+<img src="https://github.com/luke0408/study_for_object/assets/112948730/c83c1ec8-e40b-4fe4-bdc8-1e4150241e12" style="width:700px; height:1000px;"/>
+<br><br>
 
 * **수정 후**
 
